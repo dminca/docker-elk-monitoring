@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  pyapp:
+    build: ./python
+    ports:
+      - '50002:8080'
+
+  nodeapp:
+    build: ./node
+    ports:
+      - '50003:8080'
+
