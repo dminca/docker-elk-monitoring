@@ -1,5 +1,5 @@
 FROM node:alpine
-ENV PORT 50003
+ENV PORT 8080
 ADD . /app
 WORKDIR /app
 
