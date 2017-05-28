@@ -1,6 +1,11 @@
 version: '2'
 
 services:
+  #  javaapp:
+  #    build: ./java
+  #    ports:
+  #      - '50001:50001'
+
   pyapp:
     build: ./python
     ports:
