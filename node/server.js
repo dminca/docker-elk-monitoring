@@ -1,10 +1,14 @@
 // Load the http module to create an http server.
 var http = require('http');
 
+// for showing in loadbalancer
+var os = require('os');
+var hostname = os.hostname();
+
 // Configure our HTTP server to respond with Hello World to all requests.
 var server = http.createServer(function (request, response) {
   response.writeHead(200, {"Content-Type": "text/plain"});
-  response.end("Hello JS World\n");
+  response.end("Hello JS World\n" + "running on: " + hostname);
 });
 
 // Listen on port 8000, IP defaults to 127.0.0.1
