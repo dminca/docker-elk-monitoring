@@ -16,3 +16,8 @@ services:
     ports:
       - '50003:8080'
 
+  lb:
+    build: ./nginx
+    ports:
+      - '8090:8090'
+
