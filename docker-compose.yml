@@ -17,7 +17,9 @@ services:
       - '50003:8080'
 
   lb:
-    build: ./nginx
+    image: nginx:alpine
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
     ports:
       - '8090:8090'
 
