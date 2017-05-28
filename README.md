@@ -18,6 +18,6 @@
 
 ### TODO
 - [x] pornirea aplicatiilor ca servicii (pentru simplitate toate aplicatiile vor fi pornite pe aceeasi masina)
-- [ ] un load balancer care sa directioneze request-urile venite la una dintre aplicatii
+- [x] un load balancer care sa directioneze request-urile venite la una dintre aplicatii
 - [ ] o stiva ELK pentru colectarea logurilor si monitorizarea aplicatiilor
 
