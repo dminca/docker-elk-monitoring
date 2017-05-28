@@ -1,20 +1,26 @@
 version: '2'
 
 services:
-  #  javaapp:
-  #    build: ./java
-  #    ports:
-  #      - '50001:50001'
+  #    javaapp:
+  #      build: ./java
+  #      ports:
+  #        - '50001:50001'
+  #    networks:
+  #      - elk
 
   pyapp:
     build: ./python
     ports:
       - '50002:8080'
+    networks:
+      - elk
 
   nodeapp:
     build: ./node
     ports:
       - '50003:8080'
+    networks:
+      - elk
 
   lb:
     build: ./nginx
